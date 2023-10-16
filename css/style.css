@@ -10,19 +10,18 @@
 .flex {
     display: flex;
 }
-
 .contenitore {
     max-width: 1100px;
     margin: 0 auto;
     padding: 1.25rem 0px;
-    gap: 10px;
-    flex-wrap: wrap;
 }
 
 .b-blue {
     background-color: #9792e4;
 }
-
+.t-white{
+    color: white;
+}
 /*common*/
 /*debug*/
 
@@ -47,7 +46,21 @@
     height: 37.5rem;
     border: 1px solid black;
 }
-
+.user-cards{
+    height: 150px;
+}
+.about-us{
+    background-color: red;
+    height: 300px;
+}
+.user{
+    background-color: red;
+    height: 250px;
+}
+.info{
+    background-color: green;
+    height: 200px;
+}
 /*debug*/
 /*header*/
 header {
@@ -94,8 +107,37 @@ header {
 }
 
 .col {
-    width: calc(90% / 2);
+    width: calc(100% / 2 - 10px);
     padding: 2.5rem 1.25rem;
 }
-
+.user-box{
+    padding: 1.25rem 0 1.875rem;
+    margin: 0 1.25rem;
+}
+.user-cards{
+    width: 100%;
+    margin: 1.8rem 0;
+}
+.b-blue .cards{
+    background-color: white;
+}
+.about-us {
+    width: 70%;
+    padding:1.25rem 1.25rem ;
+    margin: 2rem 0 2.5rem;
+}
+.user{
+    width: 30%;
+    padding:1.25rem 1.25rem ;
+    margin: 2rem 0 2.5rem;
+}
+.info{
+    text-align: center;
+    padding:1.25rem 1.25rem;
+}
 /*main*/
+/*footer*/
+footer{
+    background-color: #333333;
+}
+/*footer*/
