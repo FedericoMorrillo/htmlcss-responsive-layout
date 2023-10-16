@@ -1,7 +1,101 @@
 /*reset*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /*reset*/
+/*common*/
+.flex {
+    display: flex;
+}
+
+.contenitore {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.25rem 0px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.b-blue {
+    background-color: #9792e4;
+}
+
+/*common*/
+/*debug*/
+
+.logo {
+    width: 6.25rem;
+    background-color: grey;
+    padding: 0.625rem;
+}
+
+.nav {
+    width: 12.5rem;
+    background-color: gray;
+    padding: 0.625rem;
+}
+
+.cards {
+    height: 15.625rem;
+}
+
+.col {
+    background-color: yellow;
+    height: 37.5rem;
+    border: 1px solid black;
+}
+
+/*debug*/
+/*header*/
+header {
+    background-color: #0084fd;
+}
+
+.navbar {
+    justify-content: space-between;
+    padding: 0.625rem 1.25rem;
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+
+}
+
+.nav {
+    text-align: center;
+
+}
+
+/*header*/
+/*main*/
+.card-box {
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 1.25rem 1.25rem 2.5rem 1.25rem;
+}
+
+.cards {
+    width: calc(100% / 3 - 10px);
+    background-color: #b5ddff;
+    flex-grow: 1;
+}
+
+.big-card {
+    width: calc(200% / 3 - 10px)
+}
+
+.box {
+    justify-content: center;
+    padding:2.5rem 0 1.25rem 0 ;
+}
+
+.col {
+    width: calc(90% / 2);
+    padding: 2.5rem 1.25rem;
+}
+
+/*main*/
