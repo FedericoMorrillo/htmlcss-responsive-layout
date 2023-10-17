@@ -29,6 +29,9 @@ article{
 .t-center{
     text-align: center;
 }
+.t-left{
+    text-align:left ;
+}
 .space-up{
     padding-top: 1.25rem;
 }
@@ -39,7 +42,7 @@ article{
     display: flex;
 }
 .contenitore {
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 1.25rem 0px;
 }
@@ -71,11 +74,15 @@ img{
 .only-mobile{
     display: none;
 }
+h2{
+    color: #0084fd;
+}
+.b-blue h2{
+    color: white;
+}
 /*common*/
 /*debug*/
-.user-cards{
-    height: 150px;
-}
+
 .about-us{
     background-color: red;
     height: 300px;
@@ -138,6 +145,7 @@ li{
 }
 .inf-card{
     width: 50%;
+    padding-bottom: 1.25rem;
 }
 .card-img{
     width: 50%;
@@ -153,9 +161,10 @@ li{
     background-color: #b5ddff;
     flex-grow: 1;
     border-radius: 0.9375rem;
-    padding: 1.5625rem 1.5625rem 1.5625rem;
-
-    
+    padding: 1.5625rem 1.5625rem 1.5625rem;    
+}
+.cards article{
+    color: #5a6e7f;
 }
 
 .big-card {
@@ -197,9 +206,26 @@ li{
 .user-cards{
     width: 100%;
     margin: 1.8rem 0;
+    padding:1.25rem 0.625rem;
+    border-radius: 1rem;
 }
 .b-blue .cards{
     background-color: white;
+}
+.photo{
+    width: 20%;
+    height: 100%;
+}
+.bio{
+    width: 80%;
+    margin-left: 1.25rem;
+}
+.bio h3{
+    text-align: left;
+}
+.photo img {
+    width: 100%;
+    border-radius: 100%;
 }
 .about-us {
     width: 70%;
@@ -268,6 +294,9 @@ responsive
         width: 100%;
         margin: 0;
     }
+    .bio{
+        padding-top: 0;
+    }
 }
 /*smartphone*/
 @media screen and ( max-width: 575px){
@@ -293,5 +322,18 @@ responsive
     }
     .user{
         width: 100%;
+    }
+    .user-cards{
+        display: block;
+    }
+    .photo{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .bio{
+        width: 100%;
+    }
+    .bio h3{
+        text-align: center;
     }
 }
