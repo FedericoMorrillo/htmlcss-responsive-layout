@@ -17,10 +17,22 @@ article{
 }
 /*typography*/
 /*common*/
+.black{
+    color: black;
+}
+.b-blue h3,article{
+    color: white;
+}
+.white-col h3{
+    color: black;
+}
 .t-center{
     text-align: center;
 }
-.space{
+.space-up{
+    padding-top: 1.25rem;
+}
+.space-down{
     padding-bottom: 1.25rem;
 }
 .flex {
@@ -31,7 +43,9 @@ article{
     margin: 0 auto;
     padding: 1.25rem 0px;
 }
-
+img{
+    width: 100%;
+}
 .b-blue {
     background-color: #9792e4;
 }
@@ -59,13 +73,6 @@ article{
 }
 /*common*/
 /*debug*/
-
-
-.col {
-    background-color: yellow;
-    height: 37.5rem;
-    border: 1px solid black;
-}
 .user-cards{
     height: 150px;
 }
@@ -159,12 +166,29 @@ li{
 .box {
     justify-content: center;
     padding:2.5rem 0 1.25rem 0 ;
-    margin: 0 1.25rem;
+    margin: 0 7.5rem;
 }
 
 .col {
     width: calc(100% / 2 - 10px);
     padding: 2.5rem 1.25rem;
+}
+.white-col{
+    background-color: white;
+    align-self: end;
+    border-radius: 20px;
+    padding: 1.25rem;
+}
+.white-col img{
+    width: 50%;
+    margin: 0 25%;
+}
+
+.icon{
+    max-width: 3rem;
+    border-radius: 75px;
+    padding: 1rem;
+    margin:0 auto;
 }
 .user-box{
     padding: 1.25rem 0 1.875rem;
@@ -232,6 +256,17 @@ responsive
     }
     .only-desktop{
         display: none;
+    }
+    .box{
+        margin: 0 auto;
+        padding: 1.25rem;
+    }
+    .white-col{
+        width: 100%;
+    }
+    .white-col img{
+        width: 100%;
+        margin: 0;
     }
 }
 /*smartphone*/
