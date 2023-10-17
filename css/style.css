@@ -6,7 +6,23 @@
 }
 
 /*reset*/
+/*typography*/
+body{
+font-size: 0.875rem;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+article{
+    line-height: 1.25rem;
+}
+/*typography*/
 /*common*/
+.t-center{
+    text-align: center;
+}
+.space{
+    padding-bottom: 1.25rem;
+}
 .flex {
     display: flex;
 }
@@ -22,10 +38,21 @@
 .t-white{
     color: white;
 }
-.white-box{
+.white-btn{
     background-color: white;
-    border-radius: 5px;
+    border-radius: 25px;
     padding: 0.3125rem  0.63rem;
+    text-align: center;
+}
+.white-btn a{
+    color:black
+}
+.blue-btn{
+    background-color: #0084fd;
+    border-radius: 25px;
+    padding: 0.3125rem  0.63rem;
+    text-align: center;
+    max-width: 8rem;
 }
 .only-mobile{
     display: none;
@@ -33,9 +60,6 @@
 /*common*/
 /*debug*/
 
-.cards {
-    height: 15.625rem;
-}
 
 .col {
     background-color: yellow;
@@ -75,9 +99,6 @@ header {
 .logo img {
     width: 100%;
 }
-.white-box a{
-    color:black
-}
 a{
     text-decoration: none;
     color: white;
@@ -96,15 +117,43 @@ li{
     flex-wrap: wrap;
     padding: 1.25rem 1.25rem 2.5rem 1.25rem;
 }
+.cards h3{
+    color: #0084fd;
+    font-size: 1.25rem;
+}
+.cards .i-xl{
+    font-size: 3rem;
+    padding: 2rem 0 2rem 0;
+
+}
+.cards .blue-btn{
+    width: 50%;
+}
+.inf-card{
+    width: 50%;
+}
+.card-img{
+    width: 50%;
+    justify-content: center;
+}
+.card-img img{
+    width: 60%;
+   
+}
 
 .cards {
     width: calc(100% / 3 - 10px);
     background-color: #b5ddff;
     flex-grow: 1;
+    border-radius: 0.9375rem;
+    padding: 1.5625rem 1.5625rem 1.5625rem;
+
+    
 }
 
 .big-card {
-    width: calc(100% / 3 * 2)
+    width: calc(100% / 3 * 2);
+    padding-bottom: 0;
 }
 
 .box {
@@ -154,6 +203,21 @@ responsive
 *************************/
 /*tablet*/
 @media screen and (max-width:991px){
+    .big-card{ 
+        flex-direction: column;
+    }
+    .inf-card{
+        width: 100%;
+        padding-bottom: 1.25rem;
+    }
+    .card-img{
+        width: 100%;
+        flex-direction: column;
+        justify-content: end;
+    }
+    .card-img img{
+        width: 50%;
+    }
     .box{
         display: block;
     }
@@ -171,12 +235,16 @@ responsive
     }
 }
 /*smartphone*/
-@media screen and ( max-width: 767px){
+@media screen and ( max-width: 575px){
     .flex-off{
         display: block;
     }
     .card-box{
         display: block;
+    }
+    .card-img{
+        width: 100%;
+        align-items: center;
     }
     .cards{
         width: 100%;
