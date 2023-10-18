@@ -81,21 +81,6 @@ h2{
     color: white;
 }
 /*common*/
-/*debug*/
-
-.about-us{
-    background-color: red;
-    height: 300px;
-}
-.user{
-    background-color: red;
-    height: 250px;
-}
-.info{
-    background-color: green;
-    height: 200px;
-}
-/*debug*/
 /*header*/
 header {
     background-color: #0084fd;
@@ -134,6 +119,10 @@ li{
 .cards h3{
     color: #0084fd;
     font-size: 1.25rem;
+}
+.cards h2{
+    color: #0084fd;
+    font-size: 3rem;
 }
 .cards .i-xl{
     font-size: 3rem;
@@ -225,26 +214,80 @@ li{
 }
 .photo img {
     width: 100%;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 .about-us {
-    width: 70%;
+    width: 80%;
     padding:1.25rem 1.25rem ;
     margin: 2rem 0 2.5rem;
+}
+.about-us h2{
+    font-size: 2.25rem;
 }
 .user{
-    width: 30%;
+    width: 20%;
     padding:1.25rem 1.25rem ;
     margin: 2rem 0 2.5rem;
+    color: #0084fd;
+}
+.user .blue-btn{
+    max-width: 100%;
+}
+p{
+    line-height: 1.5rem;
+}
+.user-image{
+    position: relative;
+}
+.user-image img{
+    width: 100%;
+    border-radius: 100%;
+}
+.user-image i{
+    position: absolute;
+    font-size: 3.2em;
+    top: 1.5rem;
+    right: 0.2rem;
 }
 .info{
+    max-width: 31.25rem;
     text-align: center;
     padding:1.25rem 1.25rem;
+    margin: 0 auto;
+
+}
+.info article{
+    font-size: 0.8rem;
+}
+.info h2{
+    padding: 0.5rem 0;
+}
+.info .free{
+    font-size: 3rem;
+    color: #fdc15f;
+}
+.info .white-btn{
+    max-width: 20%;
+    margin: 0 auto;
+}
+.info .white-btn a{
+    color: #0084fd;
+    text-decoration: none;
+}
+
+.info a{
+    font-size: 0.8rem;
+    text-decoration: underline;
 }
 /*main*/
 /*footer*/
 footer{
     background-color: #333333;
+}
+
+.info-f a{
+    color: #0084fd;
+ 
 }
 /*footer*/
 
@@ -297,6 +340,16 @@ responsive
     .bio{
         padding-top: 0;
     }
+    .about-us{
+        width: 70%;
+    }
+    .user{
+        width: 30%;
+    }
+    .info .white-btn{
+        max-width: 20%;
+    }
+
 }
 /*smartphone*/
 @media screen and ( max-width: 575px){
@@ -335,5 +388,12 @@ responsive
     }
     .bio h3{
         text-align: center;
+    }
+    .user{
+        width: 50%;
+        padding-top: 0;
+    }
+    .info .white-btn{
+        max-width: 30%;
     }
 }
